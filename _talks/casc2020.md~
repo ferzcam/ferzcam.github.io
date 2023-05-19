@@ -1,0 +1,15 @@
+---
+title: "22nd conference on Computing Algebra in Scientific Computing"
+collection: talks
+type: "Talk"
+permalink: /talks/casc2020
+venue: "(Virtual) Johannes Kepler University"
+date: 2020-09-16
+location: "Linz, Austria "
+---
+
+**Talk:** *Purely functional implementation of a tropical geometry system in Haskell*
+
+[Conference link](https://casc-conference.org/2020/index.html)
+
+[Recording](https://casc-conference.org/2020/videos/3/09-ZhapaCamachoRamosAntonCastro.mp4)

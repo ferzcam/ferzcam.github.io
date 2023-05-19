@@ -1,0 +1,8 @@
+@misc{zhapacamacho2023cate,
+      title={CatE: Embedding $\mathcal{ALC}$ ontologies using category-theoretical semantics}, 
+      author={Fernando Zhapa-Camacho and Robert Hoehndorf},
+      year={2023},
+      eprint={2305.07163},
+      archivePrefix={arXiv},
+      primaryClass={cs.LO}
+}

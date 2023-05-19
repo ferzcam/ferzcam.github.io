@@ -1,0 +1,20 @@
+---
+title: "A-LIOn - Alignment Learning through Inconsistency negatives of the aligned Ontologies"
+collection: publications
+permalink: /publication/alion
+authors: 'Sarah M. Alghamdi, Fernando Zhapa-Camacho, Robert Hoehndorf'
+date: 'October 2022'
+venue: 'The 17th International Workshop on Ontology Matching'
+paperurl: 'https://ceur-ws.org/Vol-3324/oaei22_paper2.pdf'
+---
+
+ 
+Ontologies play an important role in sharing and reusing knowledge. Several ontologies have been
+developed to describe a particular domain but from different perspectives from communities of developers
+and users. This has led to the existence of multiple ontologies covering the same or a different domain
+with varying degrees of variability. Ontology Alignment is typically used to identify correspondences
+between semantically related elements of two or more ontologies in order to address this problem.
+We propose A-LIOn a system that learns alignments by combining lexical and semantic approaches
+as well as machine learning. The system utilizes OWL EL reasoning for negative sampling which is
+iteratively used to inform the correction of the learning of the alignments. We demonstrate that A-LIOn
+produces alignments that are coherent with respect to OWL EL.

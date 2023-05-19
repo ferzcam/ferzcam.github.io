@@ -1,0 +1,11 @@
+@article{10.1093/bioinformatics/btac811,
+	author = {Zhapa-Camacho, Fernando and Kulmanov, Maxat and Hoehndorf, Robert},
+    	title = "{mOWL: Python library for machine learning with biomedical ontologies}",
+    	journal = {Bioinformatics},
+    	year = {2022},
+    	month = {12},
+    	issn = {1367-4803},
+    	doi = {10.1093/bioinformatics/btac811},
+    	url = {https://doi.org/10.1093/bioinformatics/btac811},
+    	note = {btac811},
+   	}

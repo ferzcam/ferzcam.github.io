@@ -1,0 +1,8 @@
+@misc{zhapacamacho2023axioms,
+      title={From axioms over graphs to vectors, and back again: evaluating the properties of graph-based ontology embeddings}, 
+      author={Fernando Zhapa-Camacho and Robert Hoehndorf},
+      year={2023},
+      eprint={2303.16519},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
