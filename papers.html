@@ -28,13 +28,12 @@ permalink: /publications/
 </div>
 
 <div class="container">
-  <a href="{{ post.paperurl }}" target="_blank" class="button two">
     {% if post.paperurl %}
-    Paper
+      <a href="{{ post.paperurl }}" target="_blank" class="button two">Paper</a>
     {% elsif post.arxiv %}
-    ArXiv
+      <a href="{{ post.arxiv }}" target="_blank" class="button two">ArXiv</a>
     {% endif %}
-  </a>
+
   {% if post.codeurl %}
   <a href="{{ post.codeurl }}" target="_blank" class="button two">GitHub</a>
   {% endif %}
