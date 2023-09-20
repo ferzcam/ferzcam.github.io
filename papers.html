@@ -8,20 +8,26 @@ permalink: /publications/
 
 {% for post in site.publications reversed %}
 
-<div class="container">
-  <h4>{{ post.title }}</h4>
-  {% if post.venue %}
+
+<div class="pub-item">
+
+
+<p class="pub-title">{{ post.title }}</p>
+
+
+{% if post.venue %}
   {% if post.venueurl %}
-  <a href="{{ post.venueurl }}" target="_blank" class="button one">{{ post.venue }}</a>
+    <a href="{{ post.venueurl }}" target="_blank" class="button one">{{ post.venue }}</a>
   {% else %}
-   <a href="{{ post.paperurl }}" target="_blank" class="button one">{{ post.venue }}</a>
-  <!-- <p class="button one">{{ post.venue }}</p> -->
+    <a href="{{ post.paperurl }}" target="_blank" class="button one">{{ post.venue }}</a>
   {% endif %}
-  {% else %}
+{% else %}
   <p class="button one">Preprint</p>
-  {% endif %}
-</div>
-<p><i>{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
+{% endif %}
+
+
+
+<p><i class="pub-authors">{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
 
 <div class="justified">
   <p> {{ post.content }} </p>
@@ -39,6 +45,8 @@ permalink: /publications/
   {% endif %}
   
 
+
+</div>
 
 </div>
 

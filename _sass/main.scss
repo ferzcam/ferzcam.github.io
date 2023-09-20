@@ -1,3 +1,4 @@
+@import "minima";
 
 .row {
   display: flex;
@@ -72,7 +73,9 @@ p.thick {
 
 .justified {
     text-align: justify;
-    text-justify: inter-word;}
+    text-justify: inter-word;
+    font-size: 0.8em;
+}
 	
 .container {
     display: flex;
@@ -80,8 +83,26 @@ p.thick {
     gap: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
-
 }
+
+.pub-item {
+    background-color: #f0f3f5;// #f4f7fa;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.pub-title {
+    text-decoration: none;
+    color: darken($brand-color, 25%);
+    font-weight: bold;
+}
+
+
+.pub-authors {
+    font-size: 0.9em;
+}
+
+
 
 .text {
     margin-left: 20px;
@@ -121,11 +142,10 @@ p.thick {
 
 .button{
 	text-decoration: none;
-	color: black;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
 	position: relative;
-	padding: 7px;
+	padding: 3px;
 }
 
 
@@ -141,14 +161,14 @@ a.button.one:before, a.button.one:after{
 a.button.one:before{
 	top: -2.5%;
 	left: -1%;
-	border-top: 2px solid black;
-	border-left: 2px solid black;	
+	border-top: 1.5px solid darken($brand-color, 25%);
+	border-left: 1.5px solid darken($brand-color, 25%);
 }
 a.button.one:after{
 	bottom: -2.5%;
 	right: -1%;
-	border-bottom: 2px solid black;
-	border-right: 2px solid black;
+	border-bottom: 1.5px solid darken($brand-color, 25%);
+	border-right: 1.5px solid darken($brand-color, 25%);
 }
 a.button.one:hover:before, a.button.one:hover:after{
 	width: 100%;

@@ -7,15 +7,13 @@ permalink: /talks/
 
 <h2>Upcoming</h2>
 
-<ul>
+
 {% for post in site.upcoming_talks reversed %}
 
 
-<li class="postitem">
+<div class="pub-item">
 
-  <div class="container">
-    <h4>{{ post.title }}</h4>
-  </div>
+  <p class="pub-title">({{ post.date | date: "%Y, %b" }}) {{ post.title }}</p>
 
   <div class="container">
     <a href="{{ post.venueurl }}" target="_blank" class="button two">{{ post.venue }}</a>
@@ -23,30 +21,24 @@ permalink: /talks/
     <a href="{{ post.resources}}" target="_blank" class="button two">Resources</a>
     {% endif %}
     {% if post.codeurl %}
-    <a href="{{ post.codeurl }}" target="_blank" class="button two">GitHub</a>
+    <a href="{{ post.codeurl }}" target="_blank" class="button two">Code</a>
     {% endif %}
 
   </div>
   
-</li>
+</div>
 
 {% endfor %}
-
-</ul>
 
 
 <h2>Past</h2>
 
-<ul>
 {% for post in site.talks reversed %}
 
 
-<li class="postitem">
+<div class="pub-item">
 
-  <div class="container">
-    <h4>{{ post.title }}</h4>
-  </div>
-
+  <p class="pub-title">({{ post.date | date: "%Y, %b, %d" }}) {{ post.title }}</p>
   <div class="container">
     <a href="{{ post.venueurl }}" target="_blank" class="button two">{{ post.venue }}</a>
     {% if post.resources %}
@@ -55,11 +47,8 @@ permalink: /talks/
     {% if post.codeurl %}
     <a href="{{ post.codeurl }}" target="_blank" class="button two">GitHub</a>
     {% endif %}
-
   </div>
-  
-</li>
-
+</div>
+<br>
 {% endfor %}
 
-</ul>
