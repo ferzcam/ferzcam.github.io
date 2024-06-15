@@ -48,6 +48,8 @@ header_pages:
   - talks.html
   
 collections:
+  selected_publications:
+    sort_by: date
   publications:
     sort_by: date
   talks:

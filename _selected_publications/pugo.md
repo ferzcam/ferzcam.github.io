@@ -6,7 +6,7 @@ authors: 'Fernando Zhapa-Camacho, Zhenwei Tang, Maxat Kulmanov, Robert Hoehndorf
 date: 'Jan 2024'
 arxiv: 'https://doi.org/10.1101/2024.01.28.577662'
 codeurl: 'https://github.com/bio-ontology-research-group/pu-go'
-citation: 'pugo'
+pubicon: 'pugo'
 ---
 
 Automated protein function prediction is a crucial and widely studied

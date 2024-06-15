@@ -8,6 +8,7 @@ venue: 'Bioinformatics, Volume 39, Issue 1'
 paperurl: 'https://doi.org/10.1093/bioinformatics/btac811'
 codeurl: 'https://github.com/bio-ontology-research-group/mowl'
 citation: 'mowl'
+pubicon: 'mowl'
 ---
 
 **Motivation** Ontologies contain formal and structured information

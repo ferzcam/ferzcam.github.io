@@ -28,5 +28,83 @@ I did my undergraduate studies at Yachay Tech in Ecuador in Information Technolo
 
 Play soccer and chess. Swimming. 
 
+<br>
+<br>
+
+<!-- <h2>Hobbies</h2> -->
+
+
+<!-- <br> -->
+<!-- <br> -->
+<h1> Selected Publications </h1>
+{% for post in site.selected_publications reversed %}
+
+
+
+<div class="pub-item container-spread">
+
+  
+  <div>
+    <p class="pub-title">{{ post.title }}</p>
+    {% if post.venue %}
+    {% if post.venueurl %}
+    <a href="{{ post.venueurl }}" target="_blank" class="button one">{{ post.venue }}</a>
+    {% else %}
+    <a href="{{ post.paperurl }}" target="_blank" class="button one">{{ post.venue }}</a>
+    {% endif %}
+    {% else %}
+    <p class="button one">Preprint</p>
+    {% endif %}
+    
+    <p><i class="pub-authors">{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
+    <!-- <div class="justified"> -->
+      <!-- <p> {{ post.content }} </p> -->
+      <!-- </div> -->
+    
+    <div class="container">
+      <!-- {% if post.citation %} -->
+      <!-- <button type="button" class="collapsible button four">Bibtex Citation</button> -->
+      <!-- <div class="content"> -->
+	<!-- <pre> -->
+	  <!-- {% include bibtex/{{ post.citation }} %} -->
+    <!-- </pre> -->
+	<!-- </div> -->
+      <!-- {% endif %} -->
+      {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" target="_blank" class="button two">Paper</a>
+      {% elsif post.arxiv %}
+      <a href="{{ post.arxiv }}" target="_blank" class="button two">ArXiv</a>
+      {% endif %}
+      
+      {% if post.codeurl %}
+      <a href="{{ post.codeurl }}" target="_blank" class="button two">GitHub</a>
+      {% endif %}
+    </div>
+    
+  </div>
+
+
+  {% if post.pubicon %}
+    <div class="container-spread">
+    <img src="../assets/images/{{ post.pubicon }}.png" alt="icon">
+  </div>
+  {% endif %}
+
+</div>
+
+
+    <!-- {% if post.citation %} -->
+  <!-- <button type="button" class="collapsible button four">Bibtex Citation</button> -->
+  <!-- <div class="content"> -->
+    <!-- <pre> -->
+      <!-- {% include bibtex/{{ post.citation }} %} -->
+    <!-- </pre> -->
+  <!-- </div> -->
+  <!-- {% endif %} -->
+  
+  <br>
+  <br>
+{% endfor %}
+
 
 

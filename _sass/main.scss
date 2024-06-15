@@ -85,6 +85,20 @@ p.thick {
     margin-bottom: 0px;
 }
 
+.container-spread {
+  display: flex;        // This enables flexbox layout
+  align-items: center;  // Aligns children vertically in the middle
+  justify-content: space-between; // Spreads out the children to utilize the space between them
+
+   img {
+    // Styles for the image
+    max-width: 150px; // Adjust width as necessary
+    height: auto;     // Maintains aspect ratio
+    margin-left: auto; // This pushes the image to the right
+  }
+ 
+}
+
 .pub-item {
     background-color: #f0f3f5;// #f4f7fa;
     padding-right: 10px;
