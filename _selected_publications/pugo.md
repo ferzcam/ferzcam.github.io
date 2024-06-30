@@ -3,8 +3,10 @@ title: "Predicting protein functions using positive-unlabeled ranking with ontol
 collection: publications
 permalink: /publication/pugo
 authors: 'Fernando Zhapa-Camacho, Zhenwei Tang, Maxat Kulmanov, Robert Hoehndorf'
-date: 'Jan 2024'
-arxiv: 'https://doi.org/10.1101/2024.01.28.577662'
+date: 'Jun 2024'
+venue: 'ISMB 2024'
+venueurl: 'https://www.iscb.org/ismb2024/home'
+paperurl: 'https://doi.org/10.1093/bioinformatics/btae237'
 codeurl: 'https://github.com/bio-ontology-research-group/pu-go'
 pubicon: 'pugo'
 ---
