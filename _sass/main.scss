@@ -99,6 +99,25 @@ p.thick {
  
 }
 
+
+.horizontal-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.horizontal-container p {
+    margin: 10px 10px; /* Adjust spacing between elements */
+}
+
+
+.scrollable-container {
+    width: 100%;
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
 .pub-item {
     background-color: #f0f3f5;// #f4f7fa;
     padding-right: 10px;

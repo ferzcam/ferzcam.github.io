@@ -31,15 +31,29 @@ Play soccer and chess. Swimming.
 <br>
 <br>
 
-<!-- <h2>Hobbies</h2> -->
+<h2>Events</h2>
+
+<div class="scrollable-container">
+
+  {% for post in site.events reversed %}
+
+  <div class="horizontal-container">
+      <p>{{ post.date | date: "%B, %Y" }}</p>
+      <p class="pub-title">{{ post.title }}</p>
+    </div>
+  
+  {% endfor %}
+  
+</div>
 
 
-<!-- <br> -->
-<!-- <br> -->
+<br>
+<br>
 <h1> Selected Publications </h1>
+
+
+
 {% for post in site.selected_publications reversed %}
-
-
 
 <div class="pub-item container-spread">
 
@@ -106,5 +120,5 @@ Play soccer and chess. Swimming.
   <br>
 {% endfor %}
 
-
+</div>
 
