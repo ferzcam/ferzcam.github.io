@@ -1,9 +1,17 @@
-
-@misc{zhapacamacho2023cate,
-title={CatE: Embedding $\mathcal{ALC}$ ontologies using category-theoretical semantics}, 
-author={Fernando Zhapa-Camacho and Robert Hoehndorf},
-year={2023},
-eprint={2305.07163},
-archivePrefix={arXiv},
-primaryClass={cs.LO}
+@InProceedings{10.1007/978-3-031-71167-1_19,
+author="Zhapa-Camacho, Fernando
+and Hoehndorf, Robert",
+editor="Besold, Tarek R.
+and d'Avila Garcez, Artur
+and Jimenez-Ruiz, Ernesto
+and Confalonieri, Roberto
+and Madhyastha, Pranava
+and Wagner, Benedikt",
+title="Lattice-Preserving {\$}{\$}{\backslash}mathcal {\{}ALC{\}}{\$}{\$}Ontology Embeddings",
+booktitle="Neural-Symbolic Learning and Reasoning",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="355--369",
+isbn="978-3-031-71167-1"
 }
