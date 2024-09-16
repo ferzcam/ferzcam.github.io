@@ -4,6 +4,8 @@ collection: publications
 permalink: /publication/cate
 authors: 'Fernando Zhapa-Camacho, Robert Hoehndorf'
 date: 'Sep 2024'
+venue: 'NeSy 2024'
+venueurl: 'https://sites.google.com/view/nesy2024'
 arxiv: 'https://arxiv.org/abs/2305.07163'
 paperurl: 'https://doi.org/10.1007/978-3-031-71167-1_19'
 codeurl: 'https://github.com/bio-ontology-research-group/catE'
