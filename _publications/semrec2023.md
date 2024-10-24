@@ -3,7 +3,7 @@ title: "Evaluating Different Methods for Semantic Reasoning Over Ontologies"
 collection: publications
 permalink: /publication/semrec2023
 authors: 'Fernando Zhapa-Camacho, Robert Hoehndorf'
-date: Nov 2023'
+date: 'Nov 2023'
 venue: 'SemREC 2023'
 venueurl: 'https://semrec.github.io/'
 paperurl: 'https://ceur-ws.org/Vol-3592/paper9.pdf'

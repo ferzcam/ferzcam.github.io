@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/embedpvp
 authors: 'Azza Althagafi, Fernando Zhapa-Camacho, Robert Hoehndorf'
 date: 'May 2024'
-venue: 'Bioinformatics, Volume X, Issue X'
+venue: 'Bioinformatics, Volume 40, Issue 5'
 arxiv: 'https://www.biorxiv.org/content/10.1101/2023.11.08.566179v1'
 paperurl: 'https://doi.org/10.1093/bioinformatics/btae301'
 codeurl: 'https://github.com/bio-ontology-research-group/EmbedPVP'
