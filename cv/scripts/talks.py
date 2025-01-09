@@ -20,17 +20,15 @@ def bold_my_name(authors, my_name):
 # Function to generate the LaTeX entry
 def generate_latex_entry(data, my_name):
     authors_bolded = bold_my_name(data['authors'], my_name)
-    date = data['date'].split(' ')[-1]
+    date = str(data['date'].year)
     
     
     # Format the LaTeX entry
-    if not 'venue' in data:
-        data['venue'] = "Preprint"
     latex_entry = "\\cvpub{" + authors_bolded + ". " + date + ". " + data['title'] + ". " + data['venue'] + ".}"
     
     return date, latex_entry
 
-def process_subsection(root_dir, subsection_name):
+def process_subsection(root_dir):
     published_items = []
 
     for filename in os.listdir(root_dir):
@@ -44,30 +42,26 @@ def process_subsection(root_dir, subsection_name):
                 year, latex_entry = generate_latex_entry(data, my_name)
 
                 published_items.append((year, latex_entry))
-        except:
+        except Exception as e:
             print(f"Warning: Issues processing {filename}")
+            raise e
+            
     published_items.sort(reverse=True, key=lambda x: x[0])
     published_items = [item[1] for item in published_items]
 
-    string = "\n\n\\cvsubsection{" + subsection_name + "}"
-    string += "\n\n\\begin{cvpubs}\n\n"
+    string = "\n\n\\begin{cvpubs}"
     string += "\n\n".join(published_items)
     string += "\n\n\\end{cvpubs}"
     return string
     
-out_file = "../cv/publications_py.tex"
+out_file = "../cv/presentation_py.tex"
 
 
 
-pub_sections = {"Selected": "_selected_publications",
-                "Published": "_publications"}
+string = "\\cvsection{Presentations}"
 
-
-string = "\\cvsection{Publications}"
-
-for section_name, section_dir in pub_sections.items():
-    section_dir = f"../../{section_dir}"
-    string += process_subsection(section_dir, section_name)
+section_dir = f"../../_talks/"
+string += process_subsection(section_dir)
             
 with open(out_file, 'w') as f:
     f.write(string)

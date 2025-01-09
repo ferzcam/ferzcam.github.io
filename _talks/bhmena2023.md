@@ -1,5 +1,6 @@
 ---
 title: "mOWL - Machine Learning Library with Ontologies"
+authors: "Maxat Kulmanov, Fernando Zhapa-Camacho"
 collection: tutorial
 type: "Tutorial"
 permalink: /talks/bhmena2023
