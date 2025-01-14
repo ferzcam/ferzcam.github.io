@@ -11,7 +11,7 @@ def bold_my_name(authors, my_name):
     
     # Bold your name in the list
     authors_list = [
-        r"\textbf{" + author + "}" if my_name in author else author 
+        r"\honorpositionstyle{" + author + "}" if my_name in author else author 
         for author in authors_list
     ]
     
@@ -49,7 +49,7 @@ def process_subsection(root_dir):
     published_items.sort(reverse=True, key=lambda x: x[0])
     published_items = [item[1] for item in published_items]
 
-    string = "\n\n\\begin{cvhonors}"
+    string = "\n\n\\begin{cvhonors} \color{text}"
     string += "\n\n".join(published_items)
     string += "\n\n\\end{cvhonors}"
     return string

@@ -1,5 +1,5 @@
 ---
-title: "Development of a Tropical Algebraic Geometry package in the Haskell programming language"
+title: "Workshop presentation: Development of a Tropical Algebraic Geometry package in the Haskell programming language"
 authors: "Fernando Zhapa-Camacho"
 collection: talk
 type: "Talk"

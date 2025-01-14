@@ -11,7 +11,7 @@ def bold_my_name(authors, my_name):
     
     # Bold your name in the list
     authors_list = [
-        r"\textbf{" + author + "}" if my_name in author else author 
+        r"\honorpositionstyle{" + author + "}" if my_name in author else author 
         for author in authors_list
     ]
     
@@ -60,7 +60,7 @@ out_file = "../cv/publications_py.tex"
 
 
 pub_sections = {"Selected": "_selected_publications",
-                "Published": "_publications"}
+                "Additional": "_publications"}
 
 
 string = "\\cvsection{Publications}"
