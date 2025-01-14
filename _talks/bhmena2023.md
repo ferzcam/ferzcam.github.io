@@ -1,5 +1,5 @@
 ---
-title: "mOWL - Machine Learning Library with Ontologies"
+title: "Tutorial: mOWL - Machine Learning Library with Ontologies"
 authors: "Maxat Kulmanov, Fernando Zhapa-Camacho"
 collection: tutorial
 type: "Tutorial"
