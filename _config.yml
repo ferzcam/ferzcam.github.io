@@ -44,7 +44,7 @@ header_pages:
   - talks.html
 
 # Direct download links (these will be handled in custom header code)
-cv_download: "/cv/cv.pdf"
+cv_download: "/assets/cv.pdf"
 
 collections:
   selected_publications:
