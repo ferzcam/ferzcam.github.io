@@ -46,7 +46,8 @@ plugins:
 header_pages:
   - papers.html
   - talks.html
-  
+  - cv.html
+
 collections:
   selected_publications:
     sort_by: date

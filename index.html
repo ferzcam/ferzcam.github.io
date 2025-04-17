@@ -39,7 +39,12 @@ Play soccer and chess. Swimming.
 
   <div class="horizontal-container">
       <p>{{ post.date | date: "%B, %Y" }}</p>
+      {% if post.eventurl %}
+      <a href="{{ post.eventurl }}" target="_blank" class="button three pub-title">{{ post.title }}</a>
+      {% else %}
       <p class="pub-title">{{ post.title }}</p>
+      {% endif %}
+
     </div>
   
   {% endfor %}

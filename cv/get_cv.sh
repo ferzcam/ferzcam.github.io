@@ -9,3 +9,4 @@ python extracurricular.py
 
 cd ..
 xelatex cv.tex
+mv cv.pdf ../assets/cv.pdf

@@ -3,8 +3,10 @@ title: "Ontology Embedding: A Survey of Methods, Applications and Resources"
 collection: publications
 permalink: /publication/ontoem
 authors: 'Jiaoyan Chen, Olga Mashkova, Fernando Zhapa-Camacho, Robert Hoehndorf, Yuan He, Ian Horrocks'
-date: 'June 2024'
+date: 'April 2025'
 arxiv: 'https://arxiv.org/abs/2406.10964'
+paperurl: https://doi.org/10.1109/TKDE.2025.3559023
+venue: 'IEEE TKDE'
 citation: 'ontoem'
 ---
 
