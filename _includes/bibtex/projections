@@ -1,8 +1,24 @@
-@misc{zhapacamacho2023axioms,
-      title={From axioms over graphs to vectors, and back again: evaluating the properties of graph-based ontology embeddings}, 
-      author={Fernando Zhapa-Camacho and Robert Hoehndorf},
-      year={2023},
-      eprint={2303.16519},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI}
+{% raw %}
+@inproceedings{zhapa2023axioms,
+  author       = {Fernando Zhapa{-}Camacho and
+                  Robert Hoehndorf},
+  editor       = {Artur S. d'Avila Garcez and
+                  Tarek R. Besold and
+                  Marco Gori and
+                  Ernesto Jim{\'{e}}nez{-}Ruiz},
+  title        = {From Axioms over Graphs to Vectors, and Back Again: Evaluating the
+                  Properties of Graph-based Ontology Embeddings},
+  booktitle    = {Proceedings of the 17th International Workshop on Neural-Symbolic
+                  Learning and Reasoning, La Certosa di Pontignano, Siena, Italy, July
+                  3-5, 2023},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {3432},
+  pages        = {85--102},
+  publisher    = {CEUR-WS.org},
+  year         = {2023},
+  url          = {https://ceur-ws.org/Vol-3432/paper7.pdf},
+  timestamp    = {Tue, 11 Jul 2023 17:14:10 +0200},
+  biburl       = {https://dblp.org/rec/conf/nesy/Zhapa-CamachoH23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
+{% endraw %}

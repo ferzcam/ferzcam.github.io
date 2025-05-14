@@ -48,6 +48,8 @@ header_pages:
   - talks.html
   
 collections:
+  preprints:
+    sort_by: date
   selected_publications:
     sort_by: date
   publications:

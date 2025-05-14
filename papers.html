@@ -1,9 +1,40 @@
 ---
 layout: page
-title: Publications
+title:
 permalink: /publications/
 ---
 
+<h1 class="post-title">Preprints</h1>
+
+{% for post in site.preprints reversed %}
+
+<div class="pub-item container-spread">
+  <div>
+    <p class="pub-title">{{ post.title }}</p>
+    <p class="button one">Preprint</p>
+    <p><i class="pub-authors">{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
+    <div class="container">
+      {% if post.arxiv %}
+      <a href="{{ post.arxiv }}" target="_blank" class="button two">ArXiv</a>
+      {% endif %}
+      
+      {% if post.codeurl %}
+      <a href="{{ post.codeurl }}" target="_blank" class="button two">GitHub</a>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if post.pubicon %}
+    <div class="container-spread">
+    <img src="../assets/images/{{ post.pubicon }}.png" alt="icon">
+  </div>
+  {% endif %}
+</div>
+  <br>
+  <br>
+{% endfor %}
+
+<h1 class="post-title">Selected Publications</h1>
 <br>
 
 {% for post in site.selected_publications reversed %}
