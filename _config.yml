@@ -29,7 +29,6 @@ github_username: ferzcam
 google_scholar: tGB1xoAAAAAJ
 orcid: 0000-0002-0710-2259
 researchgate: Fernando-Zhapa-2
-
   
 
 # Build settings
@@ -40,13 +39,13 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 
-
-
-
 header_pages:
   - papers.html
   - talks.html
-  
+
+# Direct download links (these will be handled in custom header code)
+cv_download: "/assets/cv.pdf"
+
 collections:
   preprints:
     sort_by: date

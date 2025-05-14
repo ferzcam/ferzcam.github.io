@@ -7,3 +7,7 @@ _site/
 vendor/
 
 *~
+.aider*
+*.log
+*_py.tex
+*.aux

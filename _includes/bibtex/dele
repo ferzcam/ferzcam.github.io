@@ -1,0 +1,9 @@
+@misc{mashkova2024deledeductivemathcalelthinspace,
+      title={DELE: Deductive $\mathcal{EL}^{++} \thinspace $ Embeddings for Knowledge Base Completion}, 
+      author={Olga Mashkova and Fernando Zhapa-Camacho and Robert Hoehndorf},
+      year={2024},
+      eprint={2411.01574},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2411.01574}, 
+}

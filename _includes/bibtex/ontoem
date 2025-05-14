@@ -1,7 +1,1 @@
-@misc{chen2024ontology,
-      title={Ontology Embedding: A Survey of Methods, Applications and Resources}, 
-      author={Jiaoyan Chen and Olga Mashkova and Fernando Zhapa-Camacho and Robert Hoehndorf and Yuan He and Ian Horrocks},
-      year={2024},
-      eprint={2406.10964},
-      archivePrefix={arXiv},
-}
+ @article{Chen_2025, title={Ontology Embedding: A Survey of Methods, Applications and Resources}, ISSN={2326-3865}, url={http://dx.doi.org/10.1109/TKDE.2025.3559023}, DOI={10.1109/tkde.2025.3559023}, journal={IEEE Transactions on Knowledge and Data Engineering}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Chen, Jiaoyan and Mashkova, Olga and Zhapa-Camacho, Fernando and Hoehndorf, Robert and He, Yuan and Horrocks, Ian}, year={2025}, pages={1–20} }
