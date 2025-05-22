@@ -10,6 +10,7 @@ arxiv: 'https://arxiv.org/abs/2303.16519'
 paperurl: 'https://www.cs.ox.ac.uk/isg/conferences/tmp-proceedings/NeSy2023/paper7.pdf'
 codeurl: 'https://github.com/bio-ontology-research-group/ontology-graph-projections'
 citation: 'projections'
+pubicon: 'projections'
 ---
 
 

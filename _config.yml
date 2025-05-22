@@ -57,7 +57,7 @@ collections:
     sort_by: date
   upcoming_talks:
     sort_by: date
-  events:
+  news:
     sort_by: date
 
 

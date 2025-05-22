@@ -92,8 +92,8 @@ p.thick {
 
    img {
     // Styles for the image
-    max-width: 150px; // Adjust width as necessary
-    height: auto;     // Maintains aspect ratio
+    max-height: 120px; // Adjust width as necessary
+    max-width: 200px;     // Maintains aspect ratio
     margin-left: auto; // This pushes the image to the right
   }
  
@@ -514,5 +514,6 @@ a.button.eleven:hover{
 	box-shadow: 0px 15px 10px -10px #fff;
 	transform: translate(0px 0px);
 }
+
 
 

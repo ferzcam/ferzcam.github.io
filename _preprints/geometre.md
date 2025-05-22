@@ -6,6 +6,7 @@ authors:  Fernando Zhapa-Camacho, Robert Hoehndorf
 date: 'May 2025'
 arxiv: 'https://arxiv.org/abs/2505.12369'
 codeurl: 'https://github.com/bio-ontology-research-group/GeometrE'
+pubicon: 'geometre'
 ---
 
 Geometric embedding methods have shown to be useful for multi-hop

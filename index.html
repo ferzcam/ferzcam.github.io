@@ -28,11 +28,11 @@ I practice football and chess.
 <br>
 <br>
 
-<h2>Events</h2>
+<h2>News</h2>
 
 <div class="scrollable-container">
 
-  {% for post in site.events reversed %}
+  {% for post in site.news reversed %}
 
   <div class="horizontal-container">
       <p>{{ post.date | date: "%B, %Y" }}</p>
@@ -58,9 +58,10 @@ I practice football and chess.
 
 {% for post in site.preprints reversed %}
 
-<div class="pub-item container-spread">
-  <div>
-    <p class="pub-title">{{ post.title }}</p>
+<div class="pub-item">
+  <p class="pub-title">{{ post.title }}</p>
+  <div class="container-spread">
+    <div>
     <p class="button one">Preprint</p>
     <p><i class="pub-authors">{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
     <div class="container">
@@ -78,7 +79,8 @@ I practice football and chess.
     <div class="container-spread">
     <img src="../assets/images/{{ post.pubicon }}.png" alt="icon">
   </div>
-  {% endif %}
+    {% endif %}
+    </div>
 </div>
   <br>
   <br>
@@ -91,11 +93,11 @@ I practice football and chess.
 
 {% for post in site.selected_publications reversed %}
 
-<div class="pub-item container-spread">
+<div class="pub-item">
 
-  
-  <div>
-    <p class="pub-title">{{ post.title }}</p>
+  <p class="pub-title">{{ post.title }}</p>  
+  <div class="container-spread">
+    <div>
     {% if post.venue %}
     {% if post.venueurl %}
     <a href="{{ post.venueurl }}" target="_blank" class="button one">{{ post.venue }}</a>
@@ -139,7 +141,7 @@ I practice football and chess.
     <img src="../assets/images/{{ post.pubicon }}.png" alt="icon">
   </div>
   {% endif %}
-
+  </div>
 </div>
 
 

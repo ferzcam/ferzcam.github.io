@@ -9,9 +9,10 @@ permalink: /publications/
 <br>
 {% for post in site.preprints reversed %}
 
-<div class="pub-item container-spread">
-  <div>
-    <p class="pub-title">{{ post.title }}</p>
+<div class="pub-item">
+  <p class="pub-title">{{ post.title }}</p>
+  <div class="container-spread">
+    <div>
     <p class="button one">Preprint</p>
     <p><i class="pub-authors">{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
     <div class="container">
@@ -30,7 +31,8 @@ permalink: /publications/
     <img src="../assets/images/{{ post.pubicon }}.png" alt="icon">
   </div>
   {% endif %}
-</div>
+  </div>
+  </div>
   <br>
   <br>
 {% endfor %}
@@ -42,11 +44,11 @@ permalink: /publications/
 
 
 
-<div class="pub-item container-spread">
-
-  
-  <div>
-    <p class="pub-title">{{ post.title }}</p>
+<div class="pub-item">
+  <p class="pub-title">{{ post.title }}</p>  
+  <div class="container-spread">
+    
+    <div>
     {% if post.venue %}
     {% if post.venueurl %}
     <a href="{{ post.venueurl }}" target="_blank" class="button one">{{ post.venue }}</a>
@@ -90,7 +92,7 @@ permalink: /publications/
     <img src="../assets/images/{{ post.pubicon }}.png" alt="icon">
   </div>
   {% endif %}
-
+</div>
 </div>
 
 
