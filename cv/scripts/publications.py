@@ -1,6 +1,7 @@
 import yaml
 import re
 import os
+from datetime import datetime
 
 my_name = "Fernando Zhapa-Camacho"
 
@@ -20,15 +21,23 @@ def bold_my_name(authors, my_name):
 # Function to generate the LaTeX entry
 def generate_latex_entry(data, my_name):
     authors_bolded = bold_my_name(data['authors'], my_name)
-    date = data['date'].split(' ')[-1]
-    
-    
+    date_str = data['date']
+    year = date_str.split(' ')[-1]
+
+    # Parse the date to get a sortable key (year, month)
+    try:
+        date_obj = datetime.strptime(date_str, '%b %Y')
+        sort_key = (date_obj.year, date_obj.month)
+    except:
+        # If parsing fails, fallback to year only
+        sort_key = (int(year), 0)
+
     # Format the LaTeX entry
     if not 'venue' in data:
         data['venue'] = "Preprint"
-    latex_entry = "\\cvpub{" + authors_bolded + ". " + date + ". " + data['title'] + ". " + data['venue'] + ".}"
-    
-    return date, latex_entry
+    latex_entry = "\\cvpub{" + authors_bolded + ". " + year + ". " + data['title'] + ". " + data['venue'] + ".}"
+
+    return sort_key, latex_entry
 
 def process_subsection(root_dir, subsection_name):
     published_items = []
@@ -41,9 +50,9 @@ def process_subsection(root_dir, subsection_name):
                 content = f.read()
                 yaml_content = re.search(r'^---\s*(.*?)\s*---', content, re.DOTALL).group(1)
                 data = yaml.safe_load(yaml_content)
-                year, latex_entry = generate_latex_entry(data, my_name)
+                sort_key, latex_entry = generate_latex_entry(data, my_name)
 
-                published_items.append((year, latex_entry))
+                published_items.append((sort_key, latex_entry))
         except:
             print(f"Warning: Issues processing {filename}")
     published_items.sort(reverse=True, key=lambda x: x[0])
