@@ -1,12 +1,13 @@
 ---
 title: "LLM Agent Based Protein Function Prediction"
 collection: publications
-permalink: /publication/cate
+permalink: /publication/go-agent
 authors: 'Fernando Zhapa-Camacho, Olga Mashkova, Robert Hoehndorf, Maxat Kulmanov'
 date: 'Sep 2025'
 venue: 'PSB 2026'
 venueurl: 'https://psb.stanford.edu/'
 codeurl: 'https://github.com/bio-ontology-research-group/go-agent'
+paperurl: 'https://doi.org/10.1142/9789819824755_0036'
 citation: 'go_agent'
 ---
 
