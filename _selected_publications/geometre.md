@@ -3,7 +3,9 @@ title: "Fully Geometric Multi-Hop Reasoning on Knowledge Graphs with Transitive 
 collection: publications
 permalink: /publication/geometre
 authors:  Fernando Zhapa-Camacho, Robert Hoehndorf
-date: 'May 2025'
+venue: 'ESWC 2026'
+venueurl: https://2026.eswc-conferences.org/program/accepted-papers/
+date: 'Mar 2026'
 arxiv: 'https://arxiv.org/abs/2505.12369'
 codeurl: 'https://github.com/bio-ontology-research-group/GeometrE'
 pubicon: 'geometre'
