@@ -68,9 +68,10 @@ out_file = "../cv/publications_py.tex"
 
 
 
-pub_sections = {"Selected": "_selected_publications",
-                "Additional": "_publications",
-                "Preprints": "_preprints"}
+pub_sections = {"Preprints": "_preprints",
+                "Selected": "_selected_publications",
+                "Additional": "_publications"
+                }
 
 
 string = "\\cvsection{Publications}"
