@@ -79,6 +79,7 @@ p.thick {
 	
 .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin-top: 0px;
@@ -113,7 +114,7 @@ p.thick {
 .scrollable-container {
     width: 100%;
     max-height: 400px; /* Adjust the height as needed */
-    overflow-y: scroll;
+    overflow-y: auto;
     border: 1px solid #ccc;
     padding: 10px;
 }
@@ -143,6 +144,14 @@ p.thick {
 .text {
     margin-left: 20px;
     max-width: 70%;
+}
+
+// On narrow screens let the hero text drop below the photo and use full width.
+@include media-query($on-palm) {
+    .text {
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
 
 // Collapsible Bibtex
@@ -515,5 +524,81 @@ a.button.eleven:hover{
 	transform: translate(0px 0px);
 }
 
+
+// ============================================================
+//  Theme toggle button (in the nav)
+// ============================================================
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0;
+    margin-left: 10px;
+    color: inherit;
+    vertical-align: middle;
+}
+
+
+// ============================================================
+//  Dark mode
+//  Activated by `html[data-theme="dark"]`, set in _includes/head.html
+//  from localStorage / prefers-color-scheme before first paint.
+//  These rules override minima's compiled colours (loaded via main.css)
+//  plus the custom classes above.
+// ============================================================
+$dark-bg:      #181a1b;
+$dark-surface: #25282a;
+$dark-text:    #e3e3e3;
+$dark-muted:   #9aa0a6;
+$dark-border:  #3a3d40;
+$dark-accent:  #6ab0ff;
+
+html[data-theme="dark"] {
+    background-color: $dark-bg;
+
+    body { background-color: $dark-bg; color: $dark-text; }
+
+    a, a:visited { color: $dark-accent; }
+    a:hover      { color: lighten($dark-accent, 8%); }
+
+    // Header / nav
+    .site-header { border-bottom-color: $dark-border; border-top-color: #555; }
+    .site-title, .site-title:visited { color: $dark-text; }
+    .site-nav .page-link { color: $dark-text; }
+    .site-nav .menu-icon > svg { fill: $dark-text; }
+    @include media-query($on-palm) {
+        .site-nav { background-color: $dark-surface; border-color: $dark-border; }
+    }
+
+    // Footer
+    .site-footer { border-top-color: $dark-border; }
+    .footer-col-wrapper, .footer-heading, .post-meta { color: $dark-muted; }
+    .svg-icon { fill: $dark-muted; }
+
+    // Prose
+    blockquote { color: $dark-muted; border-left-color: $dark-border; }
+    pre, code  { background-color: #2b2b3a; border-color: $dark-border; color: #d8d8e0; }
+
+    // Custom site classes
+    .pub-item { background-color: $dark-surface; }
+    .pub-title { color: $dark-accent; }
+    .button.pub-title { color: $dark-accent !important; }
+    .text { color: $dark-text; }
+    .scrollable-container { border-color: $dark-border; }
+    .person-name { color: #7fd3c4; }
+    .role-name   { color: #8fd6c2; }
+
+    // Non-link badges ("Preprint") need an explicit colour; anchor buttons
+    // already inherit the accent colour from `a`.
+    p.button { color: $dark-text; }
+
+    // Decorative hover borders/brackets are black or dark-blue in light mode —
+    // lighten them so they're visible on the dark background.
+    a.button.one:before, a.button.one:after { border-color: $dark-accent; }
+    a.button.three:before { border-top-color: $dark-text; border-right-color: $dark-text; }
+    a.button.three:after  { border-bottom-color: $dark-text; border-left-color: $dark-text; }
+}
 
 

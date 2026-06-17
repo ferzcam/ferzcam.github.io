@@ -33,3 +33,24 @@
   </div>
 
 </footer>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+    var root = document.documentElement;
+
+    function render() {
+      // Show the icon for the theme you'd switch TO.
+      toggle.textContent = root.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+    }
+    render();
+
+    toggle.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      render();
+    });
+  })();
+</script>

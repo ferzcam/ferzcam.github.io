@@ -41,7 +41,13 @@ The author string `Fernando Zhapa-Camacho` is bolded automatically by the templa
 
 ### Pages and templates
 
-`index.html` (home), `papers.html`, and `talks.html` are the top-level pages; navigation is driven by `header_pages` in `_config.yml`. Shared markup is in `_includes/` and the single layout in `_layouts/default.html`. Styles are in `_sass/`.
+`index.html` (home), `papers.html`, and `talks.html` are the top-level pages; navigation is driven by `header_pages` in `_config.yml` (plus the `cv_download` link, injected directly in `_includes/header.html`). Shared markup is in `_includes/` and the single layout in `_layouts/default.html`.
+
+The publication-item markup (the `.pub-item` / `.container-spread` block that renders title, venue badge, authors, and links) is **copy-pasted** between `index.html` (Selected Publications + Preprints) and `papers.html` (all three sections). There is no shared include for it, so layout changes to a publication entry must be mirrored across both files.
+
+### Styling
+
+The site uses the `minima` theme, overridden in two places: `_sass/minima.scss` redefines minima's SCSS variables (`$brand-color`, `$content-width`, breakpoints), and `_sass/main.scss` holds all custom classes (`.button.one`–`.eleven` hover effects, `.pub-item`, `.container`/`.container-spread` flex layouts, `.scrollable-container` news feed). Only buttons `one`, `two`, and `three` are actually used; the rest are unused experiments. Additional plain CSS and the academicons icon font are linked from `assets/css/` via `_includes/head.html`.
 
 ### The CV shares the website's data
 
