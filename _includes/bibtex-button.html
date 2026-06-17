@@ -1,0 +1,10 @@
+{%- if include.citation -%}
+<button class="bibtex-btn" type="button" data-dialog="bib-{{ include.citation }}">BibTeX</button>
+<dialog id="bib-{{ include.citation }}" class="bibtex-dialog">
+  <div class="bibtex-dialog__bar">
+    <button class="bibtex-copy" type="button">Copy</button>
+    <button class="bibtex-close" type="button" aria-label="Close">&times;</button>
+  </div>
+  <pre class="bibtex-code">{% include bibtex/{{ include.citation }} %}</pre>
+</dialog>
+{%- endif -%}

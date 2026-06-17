@@ -9,6 +9,7 @@ venueurl: 'https://www.iscb.org/ismb2024/home'
 paperurl: 'https://doi.org/10.1093/bioinformatics/btae237'
 codeurl: 'https://github.com/bio-ontology-research-group/pu-go'
 pubicon: 'pugo'
+citation: 'pugo'
 ---
 
 Automated protein function prediction is a crucial and widely studied

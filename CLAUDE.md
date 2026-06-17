@@ -35,7 +35,9 @@ Defined in `_config.yml`, each collection is a directory of Markdown files with 
 - `_news/` — home-page news feed (`collection: events`); supports an optional `eventurl` to make the headline a link.
 - `_awards/`, `_outreach/`, `_teaching/` — additional content sections.
 
-When a preprint is published, move its file from `_preprints/` to `_selected_publications/` (or `_publications/`) and add `venue:` and `paperurl:` to the front matter. Publication entries support these front-matter keys: `title`, `authors`, `date` (`'Mon YYYY'`), `venue`, `venueurl`, `paperurl`, `arxiv`, `codeurl`, `pubicon`.
+When a preprint is published, move its file from `_preprints/` to `_selected_publications/` (or `_publications/`) and add `venue:` and `paperurl:` to the front matter. Publication entries support these front-matter keys: `title`, `authors`, `date` (`'Mon YYYY'`), `venue`, `venueurl`, `paperurl`, `arxiv`, `codeurl`, `pubicon`, `citation`.
+
+**Every paper entry (preprint or publication) must include a BibTeX entry.** Add the entry as an extensionless file in `_includes/bibtex/` named to match the paper's slug, and set `citation: '<slug>'` in the front matter. This citation powers the per-entry "BibTeX" button (a collapsible box with a copy-to-clipboard control); keep BibTeX free of `{{`/`{%` since `{% include %}` runs it through Liquid.
 
 The author string `Fernando Zhapa-Camacho` is bolded automatically by the templates (and CV scripts) — keep the name spelled exactly that way in `authors`.
 

@@ -8,6 +8,7 @@ venue: 'The 17th International Workshop on Ontology Matching'
 venueurl: 'http://om2022.ontologymatching.org/'
 paperurl: 'https://ceur-ws.org/Vol-3324/oaei22_paper2.pdf'
 codeurl: 'https://github.com/bio-ontology-research-group/a-lion'
+citation: 'alion'
 ---
 
 Ontologies play an important role in sharing and reusing knowledge. Several ontologies have been

@@ -542,6 +542,61 @@ a.button.eleven:hover{
 
 
 // ============================================================
+//  BibTeX button + modal dialog
+// ============================================================
+.bibtex-btn {
+    background: none;
+    border: 1px solid darken($brand-color, 10%);
+    color: darken($brand-color, 25%);
+    font-weight: bold;
+    font-size: 13px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bibtex-btn:hover { background-color: rgba($brand-color, 0.1); }
+
+.bibtex-dialog {
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    width: 90%;
+    max-width: 640px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+.bibtex-dialog::backdrop { background: rgba(0, 0, 0, 0.5); }
+
+.bibtex-dialog__bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 8px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.bibtex-copy, .bibtex-close {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 13px;
+}
+.bibtex-close { font-weight: bold; line-height: 1; }
+
+.bibtex-code {
+    margin: 0;
+    padding: 16px;
+    border: none;
+    border-radius: 0;
+    background: none;
+    overflow-x: auto;
+    font-size: 13px;
+    white-space: pre;
+}
+
+
+// ============================================================
 //  Dark mode
 //  Activated by `html[data-theme="dark"]`, set in _includes/head.html
 //  from localStorage / prefers-color-scheme before first paint.
@@ -599,6 +654,14 @@ html[data-theme="dark"] {
     a.button.one:before, a.button.one:after { border-color: $dark-accent; }
     a.button.three:before { border-top-color: $dark-text; border-right-color: $dark-text; }
     a.button.three:after  { border-bottom-color: $dark-text; border-left-color: $dark-text; }
+
+    // BibTeX button + dialog
+    .bibtex-btn { border-color: $dark-accent; color: $dark-accent; }
+    .bibtex-btn:hover { background-color: rgba($dark-accent, 0.15); }
+    .bibtex-dialog { background-color: $dark-surface; color: $dark-text; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); }
+    .bibtex-dialog__bar { border-bottom-color: $dark-border; }
+    .bibtex-copy, .bibtex-close { background: #33373a; border-color: $dark-border; color: $dark-text; }
+    .bibtex-code { color: #d8d8e0; }
 }
 
 

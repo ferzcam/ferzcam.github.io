@@ -9,6 +9,7 @@ date: 'Mar 2026'
 arxiv: 'https://arxiv.org/abs/2505.12369'
 codeurl: 'https://github.com/bio-ontology-research-group/GeometrE'
 pubicon: 'geometre'
+citation: 'geometre'
 ---
 
 Geometric embedding methods have shown to be useful for multi-hop

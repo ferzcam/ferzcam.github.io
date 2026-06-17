@@ -1,1 +1,24 @@
-..
+{% raw %}
+@inproceedings{DBLP:conf/semweb/Zhapa-CamachoH23,
+  author       = {Fernando Zhapa{-}Camacho and
+                  Robert Hoehndorf},
+  editor       = {Debayan Banerjee and
+                  Ricardo Usbeck and
+                  Nandana Mihindukulasooriya and
+                  Gunjan Singh and
+                  Raghava Mutharaju and
+                  Pavan Kapanipathi},
+  title        = {Evaluating Different Methods for Semantic Reasoning Over Ontologies},
+  booktitle    = {Joint Proceedings of Scholarly {QALD} 2023 and SemREC 2023 co-located
+                  with 22nd International Semantic Web Conference {ISWC} 2023, Athens,
+                  Greece, November 6-10, 2023},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {3592},
+  publisher    = {CEUR-WS.org},
+  year         = {2023},
+  url          = {https://ceur-ws.org/Vol-3592/paper9.pdf},
+  timestamp    = {Tue, 02 Jan 2024 17:44:44 +0100},
+  biburl       = {https://dblp.org/rec/conf/semweb/Zhapa-CamachoH23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+{% endraw %}

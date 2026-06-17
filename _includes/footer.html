@@ -54,3 +54,28 @@
     });
   })();
 </script>
+
+<script>
+  // BibTeX dialogs: open on button click, copy to clipboard, close on
+  // the × button or a click on the backdrop.
+  (function () {
+    document.querySelectorAll('.bibtex-btn').forEach(function (btn) {
+      var dlg = document.getElementById(btn.getAttribute('data-dialog'));
+      if (!dlg) return;
+
+      btn.addEventListener('click', function () { dlg.showModal(); });
+      dlg.querySelector('.bibtex-close').addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+
+      var copy = dlg.querySelector('.bibtex-copy');
+      copy.addEventListener('click', function () {
+        var text = dlg.querySelector('.bibtex-code').textContent;
+        navigator.clipboard.writeText(text).then(function () {
+          var original = copy.textContent;
+          copy.textContent = 'Copied!';
+          setTimeout(function () { copy.textContent = original; }, 1500);
+        });
+      });
+    });
+  })();
+</script>

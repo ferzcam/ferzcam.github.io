@@ -16,6 +16,7 @@ permalink: /publications/
     <p class="button one">Preprint</p>
     <p><i class="pub-authors">{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
     <div class="container">
+      {% include bibtex-button.html citation=post.citation %}
       {% if post.arxiv %}
       <a href="{{ post.arxiv }}" target="_blank" class="button two">ArXiv</a>
       {% endif %}
@@ -73,6 +74,7 @@ permalink: /publications/
     <!-- </pre> -->
 	<!-- </div> -->
       <!-- {% endif %} -->
+      {% include bibtex-button.html citation=post.citation %}
       {% if post.paperurl %}
       <a href="{{ post.paperurl }}" target="_blank" class="button two">Paper</a>
       {% elsif post.arxiv %}
@@ -145,6 +147,7 @@ permalink: /publications/
     <!-- </pre> -->
 	<!-- </div> -->
       <!-- {% endif %} -->
+      {% include bibtex-button.html citation=post.citation %}
       {% if post.paperurl %}
       <a href="{{ post.paperurl }}" target="_blank" class="button two">Paper</a>
       {% elsif post.arxiv %}
@@ -175,21 +178,4 @@ permalink: /publications/
   <br>
   <br>
 {% endfor %}
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 

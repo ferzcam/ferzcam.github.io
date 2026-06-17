@@ -1,0 +1,27 @@
+{% raw %}
+@inproceedings{DBLP:conf/semweb/AlghamdiZH22,
+  author       = {Sarah M. Alghamdi and
+                  Fernando Zhapa{-}Camacho and
+                  Robert Hoehndorf},
+  editor       = {Pavel Shvaiko and
+                  J{\'{e}}r{\^{o}}me Euzenat and
+                  Ernesto Jim{\'{e}}nez{-}Ruiz and
+                  Oktie Hassanzadeh and
+                  C{\'{a}}ssia Trojahn},
+  title        = {A-LIOn - alignment learning through inconsistency negatives of the
+                  aligned ontologies},
+  booktitle    = {Proceedings of the 17th International Workshop on Ontology Matching
+                  {(OM} 2022) co-located with the 21th International Semantic Web Conference
+                  {(ISWC} 2022), Hangzhou, China, held as a virtual conference, October
+                  23, 2022},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {3324},
+  pages        = {137--144},
+  publisher    = {CEUR-WS.org},
+  year         = {2022},
+  url          = {https://ceur-ws.org/Vol-3324/oaei22\_paper2.pdf},
+  timestamp    = {Fri, 10 Mar 2023 16:23:09 +0100},
+  biburl       = {https://dblp.org/rec/conf/semweb/AlghamdiZH22.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+{% endraw %}

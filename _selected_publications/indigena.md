@@ -8,6 +8,7 @@ arxiv: 'https://arxiv.org/abs/2602.01088'
 paperurl: 'https://doi.org/10.1093/bioinformatics/btag325'
 venue: 'Bioinformatics'
 codeurl: 'https://github.com/bio-ontology-research-group/indigena'
+citation: 'indigena'
 ---
 
 Motivation: Predicting gene-disease associations (GDAs) is the problem to determine which gene is associated with a disease. GDA prediction can be framed as a ranking problem where genes are ranked for a query disease, based on features such as phenotypic similarity. By describing phenotypes using phenotype ontologies, ontology-based semantic similarity measures can be used. However, traditional semantic similarity measures use only the ontology taxonomy. Recent methods based on ontology embeddings compare phenotypes in latent space; these methods can use all ontology axioms as well as a supervised signal, but are inherently transductive, i.e., query entities must already be known at the time of learning embeddings, and therefore these methods do not generalize to novel diseases (sets of phenotypes) at inference time.

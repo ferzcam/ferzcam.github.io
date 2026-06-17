@@ -65,6 +65,7 @@ I practice football (usually as defender) and <a href="https://lichess.org/@/fer
     <p class="button one">Preprint</p>
     <p><i class="pub-authors">{{ post.authors | replace: "Fernando Zhapa-Camacho", "<strong>Fernando Zhapa-Camacho</strong>" | markdownify }}</i></p>
     <div class="container">
+      {% include bibtex-button.html citation=post.citation %}
       {% if post.arxiv %}
       <a href="{{ post.arxiv }}" target="_blank" class="button two">ArXiv</a>
       {% endif %}
@@ -122,6 +123,7 @@ I practice football (usually as defender) and <a href="https://lichess.org/@/fer
     <!-- </pre> -->
 	<!-- </div> -->
       <!-- {% endif %} -->
+      {% include bibtex-button.html citation=post.citation %}
       {% if post.paperurl %}
       <a href="{{ post.paperurl }}" target="_blank" class="button two">Paper</a>
       {% elsif post.arxiv %}
